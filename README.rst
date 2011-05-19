@@ -10,8 +10,8 @@ To use a theme in your Sphinx documentation, follow this guide:
 
 2. add this to your conf.py::
 
-    sys.path.append(os.path.abspath('_themes'))
-    html_theme_path = ['_themes']
+    sys.path.append(os.path.abspath(os.path.join('..', '_themes')))
+    html_theme_path = ['../_themes']
     html_theme = 'khufu'
 
 The following themes exist:
